@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 50vh;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: horizontal;
+            justify-content: end;
+            align-items: horizontal;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .box{
+            width: 30px;
+            height: 30px;
+            background-color: red;
+
+            /*margin: 10px;*/
+        }
+        .order{
+            order: 1;
+            flex-grow: 3;
+            align-self: left;
+        }
+        .order2{
+            /*order:2;*/
+            flex-grow: 3;
+        }
+        .order8{
+            /*flex-grow: 3;*/
+            flex-shrink: 2
+        ;
+        }
+    </style>
+</head>
+
+<body>
+    <p> ipsum dolor, sit amet consectetur adipisicing elit. At maxime sint vero, possimus, sed temporibus dolores illo
+        in voluptates optio laborum necessitatibus pariatur dolor ipsum perspiciatis amet ea fugit esse.</p>
+<div class="container">
+        <div class="box order">1</div>
+        <div class="box order 2">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box order8">8</div>
+        <div class="box">9</div>
+    </div>
+
+</body>
+
+</html>

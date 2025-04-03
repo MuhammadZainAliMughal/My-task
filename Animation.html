@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: blueviolet;
+            height: 100px;
+            width: 100px;
+            justify-content: center;
+            align-items: center;
+            animation-name: anim;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes anim{
+            0%{
+                transform: translate(0px, 0px) rotate(5deg);
+                background-color: yellow;
+            }
+            25%{
+                transform: translate(29px,50px) rotate(50deg);
+                background-color: chocolate;
+                
+            }
+            50%{
+                transform: translate(99px,125px) rotate(190deg);
+                background-color: rgb(75, 211, 22);
+            }
+            100%{
+                transform: translate(225px,360px) rotate(360deg) skew(45);
+                background-color: rgb(45, 17, 122) ;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>

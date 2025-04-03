@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 500px;
+            text-align: center;
+            border: 3px black solid; 
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            grid-gap: 20px;
+            background-color: rgb(105, 38, 38);
+            justify-content: center;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(230, 177, 243);
+            align-content: center;
+            align-self: center;
+            justify-self: center;
+        }
+        .item2{
+            grid-column:2;
+            grid-row:2;
+            
+         }
+        .item5{
+            grid-column:3;
+            grid-row:2;
+         }
+         .item4{
+            grid-column:2;
+            grid-row:1;
+         }
+         .item1{
+            grid-column:4;
+            grid-row:3;
+         }
+         .item6{
+            grid-column:3;
+            grid-row:3;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box item1"> box 1 </div>
+        <div class="box item2"> box 2 </div>
+        <div class="box item3"> box 3 </div>
+        <div class="box item4"> box 4 </div>
+        <div class="box item5"> box 5 </div>
+        <div class="box item6"> box 6 </div>
+    </div>
+</body>
+</html>
